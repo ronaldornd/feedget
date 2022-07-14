@@ -16,7 +16,7 @@ export function FeedbackSuccessStep({ onFeedbackRestartRequested }: FeedbackSucc
                 <span className="tex-xl mt-2">Agradecemos o feedback!</span>
                 <button
                     onClick={onFeedbackRestartRequested}
-                    className="py-2 px-6 mt-6 bg-zinc-600 leading-6 rounded-md border-transparent text-sm hover:bg-zinc-700 transition-color focus:outline-none focus:ring-2 focus:ring-red-800 focus:ring-offset-2 focus:ring-offset-zinc-900 transition-colors disabled:bg-red-600 disabled:hover:bg-red-600"
+                    className="py-2 px-6 mt-6 bg-zinc-600 leading-6 rounded-md border-transparent text-sm hover:bg-zinc-700 transition-color focus:outline-none focus:ring-2 focus:ring-green-800 focus:ring-offset-2 focus:ring-offset-zinc-900 transition-colors disabled:bg-green-600 disabled:hover:bg-green-600"
                 >
                     Quero enviar outro
                 </button>
