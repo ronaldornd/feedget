@@ -4,8 +4,6 @@ import { FeedbackType, feedbackTypes } from "..";
 import { api } from "../../../libs/api";
 import { CloseButton } from "../../CloseButton";
 import { Loading } from "../Loading";
-import { ScreenshootButton } from "../SreenshootButton";
-
 interface FeedbackContentStepProps {
     feedbackType: FeedbackType;
     onFeedbackRestartRequested: () => void;
@@ -14,7 +12,6 @@ interface FeedbackContentStepProps {
 
 export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequested, onFeedbackSent }: FeedbackContentStepProps) {
     const feedbackTypeInfo = feedbackTypes[feedbackType];
-    const [screenshoot, setScreenshot] = useState<string | null>(null);
     const [comment, setComment] = useState<string | null>();
     const [isSendingFeedback, setIsSendingFeedback] = useState(false);
     async function handleSubmitFeedback(event: FormEvent) {
@@ -23,7 +20,6 @@ export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequested, 
         await api.post('/feedbacks', {
             type: feedbackType,
             comment,
-            screenshoot,
         })
         onFeedbackSent();
         setIsSendingFeedback(false)
@@ -53,10 +49,6 @@ export function FeedbackContentStep({ feedbackType, onFeedbackRestartRequested, 
 
                 </textarea>
                 <footer className="flex flex-row gap-2">
-                    <ScreenshootButton
-                        screenshoot={screenshoot}
-                        onScreenshootTook={setScreenshot}
-                    />
 
                     <button
                         type="submit"
