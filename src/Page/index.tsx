@@ -6,7 +6,7 @@ export default function page() {
             <div className="flex flex-col items-center justify-center mt-20 h-200 w-100">
                 <h1 className="text-4xl flex justify-self-center font-serif font-bold self-center mb-4">Compartilhe!</h1>
                 <img src={qrImage} className='flex w-64 mb-0 self-center' />
-                <a href="https://expo.dev/artifacts/eas/dqGhwKHamaxCgCWVZ1E6vw.apk">
+                <a href="https://expo.dev/artifacts/eas/7HTyXvzvnEbV78YNm6XUpo.apk">
                     <div className="flex flex-row self-center gap-2 p-3 mt-10 rounded-2xl align-text-middle justify-center w-100 bg-green-500">
 
                         <img src={downloadImage} className='flex w-10 self-center h-10' />
