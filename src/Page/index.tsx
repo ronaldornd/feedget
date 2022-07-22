@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import downloadImage from "../images/download.svg";
 import qrImage from "../images/frame.svg";
-import AnimatedText from 'react-animated-text-content';
+import Typical from 'react-typical'
 
 
-export default function page() {
+export default function Page() {
     const [message, setMessage] = useState('');
     const [alerting, setAlerting] = useState(true)
+
 
 
 
@@ -21,19 +22,19 @@ export default function page() {
                 case 1:
                     setMessage('Olá')
                     break;
-                case 3:
+                case 2:
                     setMessage('Obrigado pelo interesse no meu perfil 🥰')
                     break;
-                case 5:
+                case 4:
                     setMessage('Estou testando uma nova ferramenta 🚧')
                     break;
-                case 7:
+                case 6:
                     setMessage('E gostaria muito que você pudesse me ajudar!')
                     break;
-                case 10:
+                case 9:
                     setMessage('É só clicar no botão de download e instalar o app 😁💕')
                     break;
-                case 13:
+                case 12:
                     setMessage('Fica tranquilo que é tudo seguro, só não tive 💲 para colocar na PlayStore ')
                     break;
                 case 17:
@@ -41,7 +42,8 @@ export default function page() {
                     clearInterval(timer)
                     break;
             }
-        }, 2000);
+
+        }, 3000);
 
         return (() => clearInterval(timer))
     }, []);
@@ -52,9 +54,14 @@ export default function page() {
             <div className="flex-col p-10 w-screen items-center justify-center self-center ontent-center">
                 {alerting ?
                     (
-                        <div className="flex-col mt-10 justify-center">
+                        <div className="flex-col ease-out mt-10 justify-center">
                             <div className="flex py-60  flex-col h-96 border-4 border-black shadow-2xl shadow-green-800 text-center rounded-xl  justify-center  bg-green-500">
-                                {message}
+                                <Typical
+                                    steps={[100, message, 50]}
+                                    loop={1}
+                                    wrapper="p"
+                                    className="text-black text-3xl font-semibold p-10"
+                                />
                             </div>
 
                         </div>
