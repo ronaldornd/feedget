@@ -28,13 +28,13 @@ export default function Page() {
                 case 4:
                     setMessage('Estou testando uma nova ferramenta 🚧')
                     break;
-                case 6:
+                case 7:
                     setMessage('E gostaria muito que você pudesse me ajudar!')
                     break;
-                case 9:
+                case 10:
                     setMessage('É só clicar no botão de download e instalar o app 😁💕')
                     break;
-                case 12:
+                case 13:
                     setMessage('Fica tranquilo que é tudo seguro, só não tive 💲 para colocar na PlayStore ')
                     break;
                 case 17:
@@ -57,9 +57,9 @@ export default function Page() {
                         <div className="flex-col ease-out mt-10 justify-center">
                             <div className="flex py-60  flex-col h-96 border-4 border-black shadow-2xl shadow-green-800 text-center rounded-xl  justify-center  bg-green-500">
                                 <Typical
-                                    steps={[100, message, 50]}
+                                    steps={[message]}
                                     loop={1}
-                                    wrapper="p"
+                                    wrapper="h1"
                                     className="text-black text-3xl font-semibold p-10"
                                 />
                             </div>
