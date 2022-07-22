@@ -69,7 +69,7 @@ export default function Page() {
                     <div className="flex flex-col gap-12 items-center justify-center h-screem w-sreen">
                         <h1 className="text-5xl flex justify-self-center font-serif font-bold self-center">Compartilhe!</h1>
                         <img src={qrImage} className='flex h-64 self-center' />
-                        <a className="h-full " href="https://expo.dev/artifacts/eas/7HTyXvzvnEbV78YNm6XUpo.apk">
+                        <a className="h-full " href="https://expo.dev/artifacts/eas/pLx4RaPvYCgD64fi6Y5LFK.apk">
                             <div className="flex flex-row self-center gap-2 p-3  rounded-2xl align-text-middle justify-center w-full bg-green-500">
 
                                 <img src={downloadImage} className='flex w-10 self-center h-10' />
