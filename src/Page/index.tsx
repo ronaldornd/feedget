@@ -54,17 +54,7 @@ export default function page() {
                     (
                         <div className="flex-col mt-10 justify-center">
                             <div className="flex py-60  flex-col h-96 border-4 border-black shadow-2xl shadow-green-800 text-center rounded-xl  justify-center  bg-green-500">
-                                <AnimatedText
-                                    type="chars" // animate words or chars
-
-                                    animationType="lights"
-                                    interval={0.1}
-                                    duration={0.09}
-                                    tag="h1"
-                                    className="animated-paragraph text-center p-10 text-3xl text-black font-semibold"
-                                    includeWhiteSpaces
-                                    threshold={1}
-                                    rootMargin="20%">{message}</AnimatedText>
+                                {message}
                             </div>
 
                         </div>
