@@ -5,8 +5,8 @@ import './global.css'
 export function App() {
   return (
     <>
-      <Widget />
       <Page />
+      <Widget />
     </>
   )
 }
