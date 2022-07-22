@@ -5,7 +5,7 @@ import AnimatedText from 'react-animated-text-content';
 
 
 export default function page() {
-    const [message, setMessage] = useState(String);
+    const [message, setMessage] = useState('');
     const [alerting, setAlerting] = useState(true)
 
 
